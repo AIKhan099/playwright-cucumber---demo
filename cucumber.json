@@ -1,0 +1,25 @@
+{
+    "default": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "publishQuiet": true,
+        "dryRun": false,
+        "paths": [
+            "src/tests/features/001-SignUP.feature",
+            "src/tests/features/002-Login.feature",
+            "src/tests/features/003-AddingBlueProducts.feature",
+            "src/tests/features/004-ApiTesting.feature"
+        ],
+        "require": [
+            "src/tests/steps/*.ts",
+            "src/hooks/hooks.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "format": [
+            "html:test-results/cucumber-report.html"
+        ]
+    }
+}
